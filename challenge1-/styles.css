@@ -1,36 +1,150 @@
+* {
+    --photo: hsla(283, 66%, 27%, 0.541);
+}
+
 body {
-background-color: #090b1a;
-color: white;
-padding-top: 30px;
-padding-right: 400px;
-padding-left: 400px;
-padding-bottom: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: hsl(233, 47%, 7%);
+height: 100vh;
+width: 100vw;
+overflow-x: hidden;
+margin: 0;
 } 
 
 .container {
-    padding: 30px;
-    background-color: #1b1938;
+    padding: 0;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
+    width: 70%;
+    margin: 0;
+    color: #fff;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    background-color: hsl(244, 38%, 16%);
+    padding: 40px;
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-#image {
-    float: right;
-    
+.image {
+    width: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(var(--photo), var(--photo)), url("./images/image-header-desktop.jpg") center;
+    background-size: cover;
 }
 
-.rightContainer {
-    background-color: #AA5CDB;
+.header, .header #purpleWord {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+    width: 100%;
 }
 
-.attribution {
-     font-size: 11px; 
-     text-align: center; 
+#purpleWord{
+    color: hsl(277, 64%, 61%);
+}
+
+.info-container p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 25px 0 40px 0;
+    width: 100%;
+}
+
+.statRow {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0;
+    width: 100%;
+}
+
+.stat {
+    margin-right: 100px;
+}
+
+.stat h3 {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.stat p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin: 5px 0 5px 0;
+}
+
+@media only screen and (max-width: 376px) {
+    body {
+        overflow-y: scroll;
     }
 
-.attribution a { 
-    color: hsl(227, 14%, 62%); 
+    .container {
+        width: 80%;
+        height: 95%;
+        flex-direction: column;
+        overflow-y: scroll;
+        padding: 20px 10px;
+    }
+
+    .image {
+        background: linear-gradient(var(--photo),var(--photo)), url("./images/image-header-mobile.jpg") center;
+        background-size: contain;
+        order: 1;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0;
+        height: 30%;
+        width: auto;
+    }
+
+    .header, .header #purpleWord {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .info-container {
+        order: 2;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 10px;
+        height: 70%;
+        padding: 20px;
+        width: auto;
+        justify-content: center;
+        overflow-y: hidden;
+    }
+
+    .info-container p {
+        text-align: center;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+
+    .statRow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat{
+        text-align: center;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .stat h4 {
+        font-size: 25px;
+        margin-top: 10px;
+    }
 }
+
+
+
+
+
