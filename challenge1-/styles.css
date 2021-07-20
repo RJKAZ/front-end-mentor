@@ -1,0 +1,36 @@
+body {
+background-color: #090b1a;
+color: white;
+padding-top: 30px;
+padding-right: 400px;
+padding-left: 400px;
+padding-bottom: 30px;
+} 
+
+.container {
+    padding: 30px;
+    background-color: #1b1938;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#image {
+    float: right;
+    
+}
+
+.rightContainer {
+    background-color: #AA5CDB;
+}
+
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+    }
+
+.attribution a { 
+    color: hsl(227, 14%, 62%); 
+}
