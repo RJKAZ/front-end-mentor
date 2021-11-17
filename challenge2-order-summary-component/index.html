@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
 
     body {
       background-color: hsl(228, 66%, 80%);
@@ -21,55 +29,122 @@
       background: white;
       top: 50%;
       left: 50%;
-      height: 300px;
-      width: 200px;
+      height: 350px;
+      width: 220px;
       border-radius: 20px;
       overflow: hidden;
       justify-content: center;
       align-items: center;
-    text-align: center;   
-   }
+      text-align: center;
+    }
 
-   .price-card{
-     background-color: hsl(228, 77%, 91%);
-     
-   }
+    .price-card {
+      background-color: hsl(228, 100%, 97%);
+      margin-left: 20px;
+      margin-right: 20px;
+      display: flex;
+      border-radius: 4px;
+      justify-content: center;
 
-   img {
-     object-fit: cover;
-   }
+
+    }
+
+    .price-card h2 {
+      font-size: 8px;
+    }
+
+    .changeButton {
+      color: hsl(276, 57%, 42%);
+      background-color: hsl(228, 77%, 91%);
+      border-radius: 4px;
+      border: none;
+      font-size: 8px;
+      font-weight: bold;
+      object-fit: cover;
+
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #musicLogo {
+      width: 30px;
+      height: 30px;
+      padding-left: 10px;
+      padding-right: 5px;
+    }
+
+    h4 {
+      color: hsl(227, 61%, 20%)
+    }
+
+    p {
+      font-size: 10px;
+      color: hsl(228, 45%, 44%);
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .payBtn {
+      background-color: rgb(148, 143, 212);
+      color: white;
+      font-size: 10px;
+      padding: 5px 30px;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0px 5px 3px hsl(227, 61%, 20%);
+    }
+
+    .cancelBtn {
+      background-color: white;
+      border: none;
+      color: hsl(227, 61%, 20%);
+      font-weight: bolder;
+      font-size: 10px;
+    }
   </style>
 </head>
+
 <body>
   <div class="frame">
 
     <img src="images/illustration-hero.svg">
     <h4>Order Summary</h4>
-    
 
-    <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+
+    <p>You can now listen to millions of songs, audiobooks, and podcasts on any
       device anywhere you like!</p>
+
     <div class="price-card">
-      Annual Plan
-      $59.99/year
-    
-      Change
+      <img id="musicLogo" src="images/icon-music.svg">
+      <h2>Annual Plan</h2>
+      <br>
+      <p>$59.99/year</p>
+
+
+      <button class="changeButton">Change</button>
 
     </div>
-   
-  
-    Proceed to Payment
-    Cancel Order
+    <br>
+
+
+    <button class="payBtn">Proceed to Payment</button>
+    <br>
+    <br>
+    <button class="cancelBtn">Cancel Order</button>
 
 
 
   </div>
 
- 
-  
+
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
