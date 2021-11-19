@@ -1,0 +1,11 @@
+body {
+  background-color: rgb(53, 53, 99);
+}
+
+.container {
+  width: 80px;
+  height: 80px;
+  background-color: darkblue;
+  justify-content: center;
+  display: flex;
+}
