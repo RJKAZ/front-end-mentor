@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Poppins:wght@600&display=swap');
 
+
+
 .container {
   display: flex;
+  background-image: url('./images/bg-pattern-desktop.svg');
+  background-size: 100% 100%;
 }
 
 .left-container {
-  background-image: url('./images/bg-pattern-desktop.svg');
-  background-size: 100% 100%;
+  margin: auto;
+  width: 50%;
   font-family: 'Josefin Sans';
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
+  padding-left: 200px;
+ 
 }
 
 .right-container {
@@ -19,11 +21,31 @@
   height: auto;
 }
 
+
+
 input {
-  border-radius: 10px;
+  border-radius: 30px;
   border-color: pink;
+  padding: 10px;
 }
 
 .ptext {
-  font-size: 10px;
+  font-size: 20px;
+  color: rgb(202, 130, 144)
+}
+
+.pink-text {
+  color: rgb(202, 130, 144);
+  font-size: 50px;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: left;
+  ;
+}
+
+.logo {
+  float: left;
 }
