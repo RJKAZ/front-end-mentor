@@ -1,0 +1,24 @@
+.div1 {
+  display: grid;
+  place-items: center;
+  background-color: rgb(201, 201, 233);
+}
+
+.div2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(196, 144, 144);
+}
+
+.div3 {
+  margin: 0 auto;
+  background-color: rgb(127, 150, 105);
+}
+
+.div5 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
