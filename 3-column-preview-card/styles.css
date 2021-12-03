@@ -1,0 +1,26 @@
+.container {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    background-color: grey;
+    display: flex;
+}
+
+.box {
+    flex: 1;
+}
+
+
+
+#sedans {
+    background-color: orange;
+}
+
+#suvs {
+    background-color: teal;
+}
+
+#luxary {
+    background-color: darkgreen;
+}
