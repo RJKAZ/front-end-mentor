@@ -1,26 +1,70 @@
 .container {
-    margin: auto;
-    width: 100%;
-    max-width: 800px;
-    height: 400px;
-    background-color: grey;
-    display: flex;
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  background-color: grey;
+  display: flex;
 }
 
 .box {
-    flex: 1;
+  flex: 1;
 }
 
-
-
 #sedans {
-    background-color: orange;
+  background-color: orange;
+  padding: 30px;
+  max-width: 200px;
 }
 
 #suvs {
-    background-color: teal;
+  background-color: teal;
+  padding: 30px;
+  max-width: 200px;
 }
 
 #luxary {
-    background-color: darkgreen;
+  background-color: darkgreen;
+  padding: 30px;
+  max-width: 200px;
+}
+
+.button1 {
+  background-color: #fff;
+  border: none;
+  color: orange;
+  border-radius: 50px;
+  padding: 10px;
+  width: 80%;
+}
+
+.button2 {
+  background-color: #fff;
+  border: none;
+  color: teal;
+  border-radius: 50px;
+  padding: 10px;
+  width: 80%;
+}
+
+.button3 {
+  background-color: #fff;
+  border: none;
+  color: darkgreen;
+  border-radius: 50px;
+  padding: 10px;
+  width: 80%;
+}
+
+p,
+h1 {
+  color: white;
+}
+
+p {
+  font-size: 12px;
+}
+
+h1 {
+  font-family: DIN 'Courier New', Courier, monospace;
 }
