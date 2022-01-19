@@ -3,17 +3,60 @@
   flex-direction: column;
   width: 800px;
   height: 400px;
-  background: blue;
+  background: url('./images/bg-pattern-bottom-desktop.svg');
 }
 
 .top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-right: 30px;
+  font-size: 13px;
+  overflow: hidden;
 }
 
 .bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.card {
+  background: hsl(300, 43%, 22%);
+  overflow: hidden;
+  border-radius: 10px;
+  width: 90%;
+  height: 90%;
+}
+
+.card h3 {
+  color: #fff;
+}
+
+.card p {
+  color: #fff;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.card h4 {
+  color: hsl(333, 80%, 67%);
+}
+
+.right {
+  background: hsl(300, 24%, 96%);
+}
+
+.right h3 {
+  color: hsl(300, 43%, 22%);
+}
+
+.left h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 50px;
+  padding-right: 40px;
+}
+
+.rating1 {
+  flex-direction: row;
 }
