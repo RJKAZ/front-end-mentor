@@ -1,0 +1,79 @@
+
+body {
+    margin: 0;
+    background-image: url(/newbie-challenges/07-social-proof-section-master/images/bg-pattern-top-mobile.svg), url(/newbie-challenges/07-social-proof-section-master/images/bg-pattern-bottom-mobile.svg);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: top -15px left 10px, top 500px right 10px, bottom 10px right 10px, bottom 10px left 10px;
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.intro h1 {
+    color: hsl(300,43%,22%);
+    font-weight: 700;
+}
+
+.intro p {
+    font-size: 15px;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+}
+
+.ratings ul {
+    padding: 0;
+}
+
+.ratings li {
+    background-color: hsl(300,24%,96%);
+    list-style-type: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 15px;
+    color: hsl(300,43%,22%);
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.ratings p {
+    margin-bottom: 0;
+}
+
+.name {
+    display: flex;
+}
+
+.name img {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.name h3 {
+    text-align: left;
+}
+
+.test {
+    background-color: hsl(300,43%,22%);
+    border-radius: 8px;
+    padding: 30px 25px 20px 25px;
+}
+
+.test h3 {
+    color:hsl(303, 10%, 53%);
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.test span {
+    color: var(--soft-pink);
+    font-size: 15px;
+    font-weight: 400;
+
+}
