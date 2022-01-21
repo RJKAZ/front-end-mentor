@@ -1,79 +1,207 @@
+:root{
+    /* Primary Colors */
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    /* Neutral Colors */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
 
-body {
+body{
     margin: 0;
-    background-image: url(/newbie-challenges/07-social-proof-section-master/images/bg-pattern-top-mobile.svg), url(/newbie-challenges/07-social-proof-section-master/images/bg-pattern-bottom-mobile.svg);
-    background-color: #fff;
+    background-image: url(./images/bg-pattern-top-mobile.svg) , url(./images/bg-pattern-bottom-mobile.svg);
+    background-color: var(--white);
     background-repeat: no-repeat;
-    background-position: top -15px left 10px, top 500px right 10px, bottom 10px right 10px, bottom 10px left 10px;
-    font-family: 'Spartan', sans-serif;
+    background-position:
+    top -15px left 10px,
+    top 500px right 10px,
+    bottom 10px right 10px,
+    bottom 10px left 10px;
+    font-family: 'Spartan' , sans-serif;
     text-align: center;
 }
 
-main {
+main{
     padding: 40px 20px;
 }
 
-.intro h1 {
-    color: hsl(300,43%,22%);
+.intro h1{
+    color: var(--very-dark-magenta);
     font-weight: 700;
 }
 
-.intro p {
+.intro p{
     font-size: 15px;
-    color: hsl(303, 10%, 53%);
+    color: var(--dark-grayish-magenta);
     font-weight: 500;
 }
 
-.ratings ul {
+.ratings ul{
     padding: 0;
 }
 
-.ratings li {
-    background-color: hsl(300,24%,96%);
+.ratings li{
+    background-color: var(--light-grayish-magenta);
     list-style-type: none;
     padding: 15px 30px;
     margin-top: 20px;
     font-size: 15px;
-    color: hsl(300,43%,22%);
+    color: var(--very-dark-magenta);
     font-weight: 700;
     border-radius: 8px;
 }
 
-.ratings p {
+.ratings p{
     margin-bottom: 0;
 }
 
-.name {
+.name{
     display: flex;
 }
 
-.name img {
+.name img{
     border-radius: 50px;
     width: 50px;
     height: 50px;
 }
 
-.name h3 {
+.name h3{
     text-align: left;
 }
 
-.test {
-    background-color: hsl(300,43%,22%);
+.test{
+    background-color: var(--very-dark-magenta);
     border-radius: 8px;
     padding: 30px 25px 20px 25px;
+    margin-top: 20px;
 }
 
-.test h3 {
-    color:hsl(303, 10%, 53%);
+.test p{
+    font-size: 15px;
+    color: var(--light-grayish-magenta);
+    text-align: left;
+    margin-top: 25px;
+}
+
+.test h3{
+    color: var(--light-grayish-magenta);
     font-size: 15px;
     font-weight: 700;
     margin-left: 20px;
     margin-top: 10px;
 }
 
-.test span {
+.test span{
     color: var(--soft-pink);
     font-size: 15px;
     font-weight: 400;
-
 }
+
+
+
+/* ==
+Attribution
+== */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 10px ;
+  }
+.attribution a {
+    color: var(--very-dark-magenta);
+  }
+
+
+  @media (min-width:1120px) {
+      body{
+          background-image: url(./images/bg-pattern-top-desktop.svg) , url(./images/bg-pattern-bottom-desktop.svg);
+          background-repeat: no-repeat;
+          background-position:
+          top -10px left 10px,
+          top 100px right 10px,
+          bottom 10px right 10px,
+          bottom 10px left 10px;
+      }
+
+      main{
+          margin: 80px 0 60px 0;
+      }
+
+      .intro{
+          text-align: left;
+          width: 500px;
+      }
+
+      .intro h1{
+          font-size: 50px;
+      }
+
+
+      .ratings p{
+          margin: 0;
+      }
+
+      .ratings li{
+          display: flex;
+          text-align: center;
+          padding: 20px 70px 20px 30px;
+      }
+
+      .intro h1{
+          margin: 0;
+      }
+
+      .ratings .stars{
+          margin-right: 25px;
+      }
+
+      #rating-2{
+          padding: 20px 30px;
+          position: relative;
+          left: 50px;
+      }
+
+      #rating-3{
+          position: relative;
+          left: 100px;
+      }
+
+      .contain{
+          display: flex;
+          justify-content: center;
+      }
+
+      .testimonial{
+          display: flex;
+          justify-content: center;
+          margin-left: 100px;
+          position: relative;
+      }
+
+      .test{
+          width: 285px;
+          font-size: 15px;
+      }
+
+      .test-1 , .test-2{
+          margin-right: 20px;
+      }
+
+      .test-2{
+          position: relative;
+          top: 20px;
+      }
+
+      .test-3{
+        position: relative;
+        top: 40px;
+      }
+  }
+
+  @media (min-width:640px) {
+      main{
+          margin: 50px 70px;
+      }
+  }
