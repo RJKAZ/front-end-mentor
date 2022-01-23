@@ -1,0 +1,130 @@
+body {
+    background-color: #0d1A2D;
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    background-color: #14273F;
+    width: 340px;
+    height: 590px;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    margin-top: 5%;
+    box-shadow: 0px 28px 30px 13px hsl(217, 54%, 11%);
+}
+
+.wrap {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pic {
+    background-image: url('/newbie-challenges/01-nft-challenge-newbie/images/image-equilibrium.jpg');
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: contain;
+    border-radius: 12px;
+    position: relative;
+}
+
+.pic:hover::after {
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(178, 100%, 50%, 0.4);
+    background-image: url(/newbie-challenges/01-nft-challenge-newbie/images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.eq {
+    color: white;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.eq:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.eq1 {
+    font-size: 18px;
+}
+
+.comp {
+    display: flex;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.price-color{
+    margin-left: 5px;
+    color: #46c2CD;
+    font-weight: 600;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.time-value {
+    margin-left: 5px;
+}
+
+.author {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+    border-top: solid 1px hsl(215, 32%, 27%)
+}
+
+.pic1 {
+    background-image: url(/newbie-challenges/01-nft-challenge-newbie/images/image-avatar.png);
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: contain;
+    border: solid white 1px;
+    border-radius: 100%;
+}
+
+.name {
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 380px) {
+    .main {
+        width: 300px;
+        height: 550px;
+    }
+
+    .wrap {
+        width: 260px;
+    }
+
+    .pic {
+        width: 260px;
+        height: 260px;
+    }
+}
