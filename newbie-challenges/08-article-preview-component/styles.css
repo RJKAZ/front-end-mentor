@@ -1,0 +1,64 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 300px;
+    background-color: #fff;
+    
+
+}
+
+.text {
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+h1 {
+    color: hsl(217, 19%, 35%)
+}
+
+h3 {
+    font-size: 11px;
+    color: hsl(217, 19%, 35%)
+}
+
+.date {
+    color: hsl(214, 17%, 51%)
+}
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profilepic {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    margin-right: 90px;
+}
+
+
+.paragraph {
+    color:hsl(214, 17%, 51%)
+}
