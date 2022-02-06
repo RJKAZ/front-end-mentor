@@ -7,32 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article Preview Solution</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
 
-    <main>
-        <div class="container">
-            <img src="/newbie-challenges/08-article-preview-component/images/drawers.jpg" alt="" class="furniture">
-            <div class="column">
-                <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
-                <p>Ever been in a room and felt like something was missing? Perhaps
-                    it felt slightly bare and uninviting. I’ve got some simple tips
-                    to help you make any room feel complete.</p>
-                <div class="column-down">
-                    <img src="/newbie-challenges/08-article-preview-component/images/avatar-michelle.jpg" class="avatar"
-                        alt="">
-                    <div class="name">
-                        <span>Michelle Appleton</span> <br>
-                        <span>28th June 2020</span>
-                    </div>
-                    <img src="/newbie-challenges/08-article-preview-component/images/icon-share.svg" class="share"
-                        alt="">
-                </div>
-            </div>
-        </div>
-    </main>
+    <div id="card">
+        <img src="/newbie-challenges/08-article-preview-component/images/drawers.jpg" alt="pic of drawers" class="drawers">
+        <h1 class="title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+        <p class="paragraph">Ever been in a room and felt like something was missing? Perhaps 
+            it felt slightly bare and uninviting. I’ve got some simple tips 
+            to help you make any room feel complete. </p>
+        <img src="/newbie-challenges/08-article-preview-component/images/avatar-michelle.jpg" alt="" class="avatar">
 
+        <div class="credits">
+            <p class="name">Michelle Appleton</p>
+            <p class="date">28 Jun 2020</p>
+        </div>
+        <img src="/newbie-challenges/08-article-preview-component/images/icon-share.svg" alt="" class="share_button">
+
+        <div class="images">
+            <p class="share">S H A R E</p>
+            <img class="facebook" src="/newbie-challenges/08-article-preview-component/images/icon-facebook.svg" alt="Share to Facebook">
+            <img class="twitter" src="/newbie-challenges/08-article-preview-component/images/icon-twitter.svg" alt="Share to Twitter">
+            <img class="pinterest" src="/newbie-challenges/08-article-preview-component/images/icon-pinterest.svg" alt="Share to Pinterest">
+            <div class="triangle"></div>
+        </div>
+
+</div>
+<script src="script.js"></script>
 </body>
 
 </html>
