@@ -1,3 +1,168 @@
-/*
-https://github1s.com/outerpreneur/four-card-feature-section-master/blob/HEAD/styles.css
-*/
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --ff: 'Poppins', sans-serif;
+    --darkblue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --light-grey: hsl(0, 0%, 98%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: var(--ff);
+    align-items: center;
+    background-color: rgb(206, 247, 247);
+}
+
+.container {
+    background-color: #fff;
+    padding: 3em 6em;
+    border-radius: 5px;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.intro p {
+    font-size: 0.9em;
+    width: 70%;
+    margin: auto;
+    margin-top: 2em;
+    font-weight: 200;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cards p {
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+.cards h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+figure {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 30px;
+    padding: 0px;
+    margin-right: 5px
+}
+
+.column .green-card {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px hsl(234, 12%, 34%, 0.1);
+    padding: 5%;
+    box-shadow: 0 8px 16px -6px hsl(234, 12%, 34%, 0.9);
+    border-top: var(--cyan) solid;
+    height: 170px;
+    width: 250px;
+}
+
+.red-card {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px hsl(234, 12%, 34%, 0.1);
+    padding: 5%;
+    box-shadow: 0 8px 16px -6px hsl(234, 12%, 34%, 0.9);
+    border-top: var(--red) solid;
+    height: 170px;
+    width: 250px;
+}
+
+.blue-card {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px hsl(234, 12%, 34%, 0.1);
+    padding: 5%;
+    box-shadow: 0 8px 16px -6px hsl(234, 12%, 34%, 0.9);
+    border-top: var(--blue) solid;
+    height: 170px;
+    width: 250px;
+}
+
+.yellow-card {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px hsl(234, 12%, 34%, 0.1);
+    padding: 5%;
+    box-shadow: 0 8px 16px -6px hsl(234, 12%, 34%, 0.9);
+    border-top: var(--orange) solid;
+    height: 170px;
+    width: 250px;
+}
+
+@media only screen and (max-width:650px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        margin-bottom: 4em;
+        width: 100%;
+    }
+
+    .green-card {
+        width: 90%;
+    }
+
+    .red-card {
+        width: 90%;
+    }
+
+    .blue-card {
+        width: 90%;
+    }
+
+    .yellow-card {
+        width: 90%;
+    }
+}
