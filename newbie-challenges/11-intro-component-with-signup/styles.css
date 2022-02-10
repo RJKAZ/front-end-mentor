@@ -1,0 +1,40 @@
+body {
+  background-image: url('./images/bg-intro-desktop.png');
+  background-color: hsl(0, 100%, 74%);
+}
+
+main {
+  display: flex;
+}
+
+form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+h2 {
+  background-color: hsl(277, 84%, 32%);
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+
+button {
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #fff;
+}
+
+.left p {
+  color: #fff;
+}
