@@ -5,6 +5,8 @@ body {
 
 main {
   display: flex;
+  justify-content: center;
+  margin-top: 10%;
 }
 
 form {
@@ -24,6 +26,11 @@ h2 {
   text-align: center;
 }
 
+form {
+  width: 400px;
+  box-shadow: 90px, black;
+}
+
 button {
   background-color: hsl(154, 59%, 51%);
   color: #fff;
@@ -35,6 +42,37 @@ h1 {
   color: #fff;
 }
 
+.left {
+  padding-right: 3%;
+}
+
 .left p {
   color: #fff;
+}
+
+.left h1 {
+  font-size: 40px;
+}
+
+.input {
+  padding: 10px;
+  margin: 10px
+}
+
+.plain {
+  font-size: smaller;
+  color: rgb(216, 216, 216)
+}
+
+.purple {
+  padding: 15px;
+}
+
+.legal {
+  font-size: 10px;
+  text-align: center;
+}
+
+.terms {
+  color: red;
 }
