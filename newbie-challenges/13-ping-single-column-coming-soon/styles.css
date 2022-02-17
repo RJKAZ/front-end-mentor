@@ -29,3 +29,41 @@ img {
   flex-direction: column;
   align-items: center;
 }
+
+.input {
+  border-radius: 30px;
+  padding: 10px 60px 10px 60px;
+  border-width: thin;
+  text-align: left;
+}
+
+.button {
+  border-radius: 30px;
+  padding: 10px 40px 10px 40px;
+  border: none;
+  background-color: var(--blue);
+  color: #fff;
+  margin-left: 20px;
+}
+#heading {
+  font-weight: normal;
+  color: var(--gray);
+}
+
+.fullheading {
+  font-size: 50px;
+}
+
+.subheading {
+  font-size: 25px
+}
+
+.fa-brands {
+  color: var(--blue);
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0 0 2px #888;
+  padding: 0.5em 0.6em;
+  justify-content: space-between;
+
+}
