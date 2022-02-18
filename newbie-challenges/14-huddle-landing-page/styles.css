@@ -1,0 +1,14 @@
+body {
+    background-color:hsl(257, 40%, 49%);
+    background-image: url('/newbie-challenges/14-huddle-landing-page/images/bg-desktop.svg');
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex; 
+    flex-direction: row ;
+}
+
+
+
