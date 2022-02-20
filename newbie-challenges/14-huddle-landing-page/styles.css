@@ -3,12 +3,51 @@ body {
     background-image: url('/newbie-challenges/14-huddle-landing-page/images/bg-desktop.svg');
     display: flex;
     flex-direction: column;
+    width: 1440px;
+}
+
+.logo {
+    margin-left: 100px;
+    margin-top: 100px;
 }
 
 .main-content {
     display: flex; 
     flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px
+}
+
+.socials {
+    float: right;
+    color: #fff;
+    
+    
+    
+}
+
+.fa-brands {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    padding-top: 0.7rem;
 }
 
 
+.content { 
+    color: #fff;
+    margin-left: 60px;
+}
 
+
+.button {
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    font-size: large;
+    padding: 20px 60px 20px 60px;
+    border-radius: 30px;
+    margin-left: 10px;
+}
