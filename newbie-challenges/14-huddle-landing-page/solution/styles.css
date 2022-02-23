@@ -1,3 +1,141 @@
-/*
-https://github1s.com/RokuFSD/huddle-landing-page/blob/main/assets/css/style.css
-*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+
+.container {
+    max-width: 1200px;
+    padding: 3% 5%;
+    margin: 0 auto; 
+    
+}
+
+.flex {
+    display: flex;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(../images/bg-desktop.svg);
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.938rem;
+    font-weight: 400;
+}
+
+.container__img {
+    width: 60%;
+}
+
+.container__img img {
+    width: 100%;
+    margin: 0.75rem auto;
+}
+
+.container__text {
+    width: 40%;
+    padding-left: 3.25rem;
+}
+
+.container__text-title {
+    padding-top: 3.25rem;
+}
+
+.container__text-subtitle {
+    margin-top: 2.5rem;
+    text-align: justify;
+    font-size: 0.818rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: #fff;
+    color: hsl(300,69%,71%);
+    padding: 0.75rem 3.5rem;
+    border-radius: 2rem;
+    transition: 0.3s;
+    margin-top: 1.75rem;
+}
+
+.button--ghost {
+    border: none; 
+    box-shadow: 2px 2px 8px 0px black;
+}
+
+.button:hover {
+    background-color: hsl(300,69%,71%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer {
+    font-size: var(--h1-font-size);
+}
+
+.attribution{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+.attribution a {
+    color: #fff;
+}
+
+.footer__socials {
+    justify-content: flex-end;
+    column-gap: 0.75rem;
+}
+
+ion-icon {
+    color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .header__logo-img {
+        width: 50%;
+    }
+
+    .container__img {
+        min-width: 100%;
+    }
+
+    .container__text {
+        text-align: center;
+        padding: 1rem;
+        min-width: 100%;
+    }
+
+    .footer__socials {
+        justify-content: center;
+    }
+}
