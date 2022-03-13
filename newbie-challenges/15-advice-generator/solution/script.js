@@ -1,0 +1,1 @@
+//https://github1s.com/TheShonuff/advice-generator/blob/HEAD/index.html#L40

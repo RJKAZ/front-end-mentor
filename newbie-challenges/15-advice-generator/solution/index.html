@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advice Generator Solution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="javascript:fetchAdvice()">
+    <main>
+        <div id="adviceContainer">
+            <div class="left"></div>
+            <div class="advicebox">
+                
+                <div class="adviceID">    
+                </div>
+
+                <div class="advice">   
+                </div>
+
+                <div class="divider">
+                    <picture>
+                        <source media="(min-width: 700px)" srcset="images/pattern-divider-desktop.svg">
+                        <source media="(max-width: 600px)" srcset="images/pattern-divider-mobile.svg">
+                        <img src="images/pattern-divider-desktop.svg"  alt="" srcset="">
+            
+                      </picture>
+                      <img src="" alt="" srcset="">
+                </div>
+
+                <div class="buttonContainer">
+                    <img src="images/icon-dice.svg" <button class="button" onclick="fetchAdvice()"></button>
+                </div>
+            </div>
+            <div class="right"></div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
