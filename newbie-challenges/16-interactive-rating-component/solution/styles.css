@@ -122,3 +122,31 @@ ion-icon:hover {
   color: hsl(25, 97%, 53%);
   background: hsl(213, 19%, 14%);
 }
+
+.thank-you .bold-text,
+.thank-you .sub-text {
+  width: 100%;
+  text-align: center;
+}
+
+.thank-you .rated,
+.thank-you .sub-text {
+  font-size: 14px;
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 80%;
+    margin: 20vh auto;
+  }
+  .numbers {
+    padding-right: 25px;
+  }
+  .number {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 4rem;
+    line-height: 2rem;
+  }
+}
