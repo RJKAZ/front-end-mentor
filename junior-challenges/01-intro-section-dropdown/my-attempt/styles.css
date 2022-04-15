@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  background-color: yellow;
+  width: 400px;
+}
+
+.right {
+  background-color: blue;
+  width: 400px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
