@@ -4,12 +4,12 @@
 }
 
 .left {
-  background-color: yellow;
+  background-color: rgb(243, 243, 233);
   width: 400px;
 }
 
 .right {
-  background-color: blue;
+  background-color: rgb(240, 240, 243);
   width: 400px;
 }
 
@@ -17,4 +17,21 @@ button {
   background-color: black;
   color: white;
   border-radius: 20px;
+}
+
+.hero {
+  width: 50%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbarleft {
+  display: flex;
+}
+.navbarright {
+  display: flex;
+  float: right;
 }
