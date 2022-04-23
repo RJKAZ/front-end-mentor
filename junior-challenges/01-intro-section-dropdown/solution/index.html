@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img id="logo" src="images/logo.svg" alt="logo">
+
+            <div class="toggle">
+                <img class="open-menu" src="./images/icon-menu.svg" alt="">
+                <img class="close-menu" src="./images/icon-close-menu.svg" alt="">
+            </div>
+
+            <ul id="navbar">
+                <li class="item" onclick="selected('first-drop')"><span class="text">features <img class="arrow"
+                            src="images/icon-arrow-down.svg" alt=""></span>
+                    <ul class="drop" id="first-drop">
+                        <li><img src="./images/icon-todo.svg"> Todo List</li>
+                        <li><img src="./images/icon-calendar.svg"> Calendar</li>
+                        <li><img src="images/icon-reminders.svg"> Reminders</li>
+                        <li><img src="./images/icon-planning.svg"> Planning</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="selected('second-drop')" on><span class="text">Company <img class="arrow"
+                            src="images/icon-arrow-down.svg" alt=""></span>
+
+                    <ul class="drop" id="second-drop">
+                        <li>History</li>
+                        <li>Our Team</li>
+                        <li>Blog</li>
+                    </ul>
+                </li>
+                <li class="item"><span>Careers</span></li>
+                <li class="item"><span>About</span></li>
+            </ul>
+            <ul id="registration">
+                <li id="login">Login</li>
+                <li id="register">register</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="text">
+            <h1 id="desktop">Make <br> remote work</h1>
+            <h1 id="mobile">Make remote work</h1>
+            <p>Get your team in sync, mo matter your location. Streamline processes, create team rituals, and watch
+                productivity soar.</p>
+            <div id="button">
+                <a href="#">Learn More</a>
+            </div>
+            <div id="clients">
+                <img src="./images/client-databiz.svg" alt="">
+                <img src="./images/client-audiophile.svg" alt="">
+                <img src="./images/client-meet.svg" alt="">
+                <img src="./images/client-maker.svg" alt="">
+            </div>
+        </div>
+        <img id="image-desktop" src="images/image-hero-desktop.png" alt="">
+        <img id="image-mobile" src="./images/image-hero-desktop.png" alt="">
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
